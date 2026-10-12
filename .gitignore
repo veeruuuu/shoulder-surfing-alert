@@ -1,0 +1,9 @@
+# Rule §21.4: never commit models, runtime data, or webcam images
+models/
+data/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/

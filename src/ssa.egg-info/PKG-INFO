@@ -1,0 +1,5 @@
+Metadata-Version: 2.4
+Name: ssa
+Version: 0.1.0
+Summary: Shoulder-Surfing Alert
+Requires-Python: <3.12,>=3.10

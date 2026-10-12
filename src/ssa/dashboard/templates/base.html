@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Shoulder Surfing Alert{% block title %}{% endblock %}</title>
+<link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <header>
+    <div class="header-left">
+      <h1>Shoulder Surfing Alert</h1>
+      <nav>
+        <a href="/" class="{{ 'active' if active == 'live' else '' }}">Live</a>
+        <a href="/calibration" class="{{ 'active' if active == 'calibration' else '' }}">Calibration</a>
+        <a href="/trusted" class="{{ 'active' if active == 'trusted' else '' }}">Trusted Faces</a>
+        <a href="/intruders" class="{{ 'active' if active == 'intruders' else '' }}">Intruder Log</a>
+        <a href="/settings" class="{{ 'active' if active == 'settings' else '' }}">Settings &amp; Stats</a>
+      </nav>
+    </div>
+    <div class="status-group">
+      <span id="camera-indicator" class="cam-dot inactive" title="Camera status"></span>
+      <span id="camera-label" class="cam-label">camera: unknown</span>
+      <div id="state-badge" class="badge safe">SAFE</div>
+    </div>
+  </header>
+
+  <main>
+  {% block content %}{% endblock %}
+  </main>
+
+  <script src="/static/app.js"></script>
+  {% block scripts %}{% endblock %}
+</body>
+</html>
+

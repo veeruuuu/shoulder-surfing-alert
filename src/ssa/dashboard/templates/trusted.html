@@ -1,0 +1,17 @@
+﻿{% extends "base.html" %}
+{% block title %} - Trusted Faces{% endblock %}
+{% block content %}
+<section class="panel">
+  <h2>Trusted Faces</h2>
+  <p>Sit alone in frame, enter a name, and click Enroll. Trusted people never trigger alerts.</p>
+  <div class="controls">
+    <input id="enroll-name" type="text" placeholder="Name">
+    <button id="btn-enroll">Enroll</button>
+  </div>
+  <div id="action-msg"></div>
+  <table id="trusted-table">
+    <thead><tr><th>Name</th><th>Owner</th><th></th></tr></thead>
+    <tbody></tbody>
+  </table>
+</section>
+{% endblock %}

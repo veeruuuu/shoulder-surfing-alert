@@ -1,0 +1,15 @@
+﻿{% extends "base.html" %}
+{% block title %} - Calibration{% endblock %}
+{% block content %}
+<section class="panel">
+  <h2>Calibration</h2>
+  <p>Sit alone in front of the camera at a normal distance (about 50cm), then click Calibrate.
+     This stores your face as the owner baseline for distance and recognition.</p>
+  <div class="controls">
+    <button id="btn-calibrate">Calibrate</button>
+  </div>
+  <div id="action-msg"></div>
+  <div id="status-line">calibrated: --</div>
+  <img id="stream" src="/api/stream" alt="Live camera preview" style="margin-top:12px;">
+</section>
+{% endblock %}

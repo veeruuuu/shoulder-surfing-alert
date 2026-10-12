@@ -1,0 +1,14 @@
+﻿{% extends "base.html" %}
+{% block title %} - Live{% endblock %}
+{% block content %}
+<section class="panel">
+  <h2>Live Preview</h2>
+  <img id="stream" src="/api/stream" alt="Live camera preview">
+  <div id="status-line">fps: -- | faces: -- | paused: --</div>
+  <div class="controls">
+    <button id="btn-pause">Pause</button>
+    <button id="btn-resume">Resume</button>
+  </div>
+  <div id="action-msg"></div>
+</section>
+{% endblock %}

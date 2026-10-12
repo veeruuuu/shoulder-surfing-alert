@@ -1,0 +1,8 @@
+opencv-python
+mediapipe
+numpy
+flask
+mss
+pillow
+pyyaml
+pytest
